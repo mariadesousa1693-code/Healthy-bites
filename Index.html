@@ -1,0 +1,110 @@
+<!DOCTYPE html><html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Healthy Bites</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:'Poppins',sans-serif;background:#f6f6f2;color:#333}/* NAV */ nav{display:flex;justify-content:space-between;align-items:center;padding:20px 8%;background:white;position:sticky;top:0;box-shadow:0 2px 8px rgba(0,0,0,0.05);z-index:10} nav h2{color:#2e7d32;margin:0} nav a{margin-left:20px;text-decoration:none;color:#333;font-weight:500}
+
+/* HERO */ .hero{height:85vh;background:url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c') center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;color:white} .hero-content{background:rgba(0,0,0,0.45);padding:40px;border-radius:12px} .hero h1{font-size:56px;margin:0} .hero p{font-size:22px;margin:10px 0} .btn{display:inline-block;margin-top:15px;padding:14px 26px;background:#43a047;color:white;text-decoration:none;border-radius:8px;font-weight:600}
+
+section{padding:70px 10%;max-width:1300px;margin:auto} section h2{text-align:center;margin-bottom:40px;font-size:34px}
+
+/* ABOUT */ .about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center} .about img{width:100%;border-radius:12px}
+
+/* MENU */ .menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px} .menu-item{background:white;border-radius:12px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,0.08);transition:transform .2s} .menu-item:hover{transform:translateY(-5px)} .menu-item img{width:100%;height:200px;object-fit:cover} .menu-item .content{padding:18px} .menu-item h3{margin:0 0 8px} .price{color:#2e7d32;font-weight:600}
+
+/* GALLERY */ .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px} .gallery img{width:100%;height:200px;object-fit:cover;border-radius:10px}
+
+/* INFO */ .info{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px} .card{background:white;padding:25px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.08)}
+
+footer{background:#1b5e20;color:white;text-align:center;padding:30px;margin-top:40px}
+
+@media(max-width:900px){ .about{grid-template-columns:1fr} .hero h1{font-size:40px} } </style>
+
+</head>
+<body><nav>
+<h2>Healthy Bites</h2>
+<div>
+<a href="#concept">Concept</a>
+<a href="#menu">Menu</a>
+<a href="#gallery">Photos</a>
+<a href="#contact">Contact</a>
+</div>
+</nav><section class="hero">
+<div class="hero-content">
+<h1>Healthy Bites</h1>
+<p>Mangez sain, vivez mieux</p>
+<p>Ouverture • 16 février</p>
+<a class="btn" href="#menu">Voir le menu</a>
+</div>
+</section><section id="concept">
+<h2>Notre Concept</h2>
+<div class="about">
+<img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd">
+<p>
+Chez <strong>Healthy Bites</strong>, tout est fait maison avec moins de gras et moins de sucre. Les fritures sont cuites au four. Nous utilisons de l'huile d'olive pour les plats et de l'huile de coco pour les desserts.
+<br><br>
+Nos burgers utilisent des pains complets ou au levain. Nous proposons des steaks 5% de matière grasse mais aussi des steaks végétaux. L'objectif : garder le plaisir du fast‑food mais en version plus saine.
+</p>
+</div>
+</section><section id="menu">
+<h2>Menu Populaire</h2>
+<div class="menu-grid"><div class="menu-item">
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+<div class="content">
+<h3>Green Future Burger</h3>
+<p>Burger végétal avec crème d'avocat et fromage vegan maison.</p>
+<p class="price">9.50€</p>
+</div>
+</div><div class="menu-item">
+<img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061">
+<div class="content">
+<h3>Healthy Power Bowl</h3>
+<p>Quinoa, avocat, légumes frais et sauce maison.</p>
+<p class="price">12€</p>
+</div>
+</div><div class="menu-item">
+<img src="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af">
+<div class="content">
+<h3>Detox Smoothie</h3>
+<p>Smoothie vert avec épinard, mangue et pomme.</p>
+<p class="price">6€</p>
+</div>
+</div><div class="menu-item">
+<img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288">
+<div class="content">
+<h3>Sweet Potato Fries</h3>
+<p>Frites de patate douce cuites au four.</p>
+<p class="price">5€</p>
+</div>
+</div></div>
+</section><section id="gallery">
+<h2>Nos Plats</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38">
+<img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe">
+<img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543">
+<img src="https://images.unsplash.com/photo-1478145046317-39f10e56b5e9">
+</div>
+</section><section id="contact">
+<h2>Informations</h2>
+<div class="info">
+<div class="card">
+<h3>Adresse</h3>
+<p>Hollywood<br>Los Angeles, CA 90028<br>États‑Unis</p>
+</div><div class="card">
+<h3>Téléphone</h3>
+<p>+1 (213) 555‑7429</p>
+</div><div class="card">
+<h3>Prix moyens</h3>
+<p>Menu enfant : 6€<br>Menu classique : 13€<br>Menu maxi : +2.5€</p>
+</div>
+</div>
+</section><footer>
+<p>© 2026 Healthy Bites</p>
+<p>Instagram : @healthybites</p>
+</footer></body>
+</html>
